@@ -1,0 +1,21 @@
+.example-form mat-form-field {
+    display: block;
+    padding: 10px;
+    width: 50%;
+  }
+  
+  .example-form mat-form-field.user-endereco {
+    width: 80%;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  button.mat-flat-button {
+    margin: 8px;
+  }
+  
