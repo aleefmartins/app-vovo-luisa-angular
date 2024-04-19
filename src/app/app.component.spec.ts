@@ -18,7 +18,7 @@ describe('AppComponent', () => {
         AppComponent,
         HeaderComponent,
         FooterComponent,
-        NavComponent
+        NavComponent,
       ]
     }).compileComponents();
   });

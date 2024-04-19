@@ -1,4 +1,4 @@
-.example-form mat-form-field {
+  .example-form mat-form-field {
     display: block;
     padding: 10px;
     width: 50%;
@@ -17,5 +17,16 @@
   
   button.mat-flat-button {
     margin: 8px;
+  }
+
+  .home-card {
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+  }
+
+  .home-card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   }
   

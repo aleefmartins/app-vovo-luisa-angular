@@ -82,7 +82,7 @@ export class UserListComponent implements OnInit {
           const blobUrl = window.URL.createObjectURL(pdfBlob);
           const anchor = document.createElement('a');
           anchor.href = blobUrl;
-          anchor.download = 'lista-de-usuarios-vovo-luisa.pdf';
+          anchor.download = 'lista-de-clientes-vovo-luisa.pdf';
           anchor.click();
           window.URL.revokeObjectURL(blobUrl);
         },

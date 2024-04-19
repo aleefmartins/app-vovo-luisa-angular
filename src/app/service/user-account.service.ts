@@ -12,7 +12,7 @@ import { environment } from '../../environments/environment';
 })
 export class UserAccountService {
 
-  private baseUrl = environment.baseUrl;
+  baseUrl = environment.baseUrl;
 
   constructor(private snackBar: MatSnackBar,
               private http: HttpClient) { }

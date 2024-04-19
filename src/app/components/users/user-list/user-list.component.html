@@ -14,8 +14,8 @@
           <mat-datepicker #picker2></mat-datepicker>
         </mat-form-field>
       
-        <button mat-raised-button color="primary" class="right" type="submit">Filtrar Usuários</button>
-        <button mat-raised-button color="primary" class="right" (click)="downloadPDF()">Baixar em PDF</button>
+        <button mat-raised-button color="primary" class="right" type="submit"><i class="material-icons">filter_list</i> Filtrar Usuários</button>
+        <button mat-raised-button color="primary" class="right" (click)="downloadPDF()"><i class="material-icons">file_download</i> Baixar em PDF</button>
       </form>
     <table mat-table class="full-width-table" [dataSource]="userAccount">
         <ng-container matColumnDef="userName">
