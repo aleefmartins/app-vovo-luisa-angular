@@ -1,9 +1,23 @@
 .buttons-container {
-    display: flex;
-    gap: 10px; /* Espaço entre os botões */
-    padding: 10px;
-  }
-  
-  button.mat-flat-button {
-    margin: 8px;
-  }
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.buttons {
+  font-size: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.buttons:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transform: translateY(-2px);
+}
+
+.material-icons {
+  font-size: 24px;
+  vertical-align: middle;
+  margin-right: 10px;
+}

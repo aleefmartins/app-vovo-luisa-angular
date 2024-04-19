@@ -1,15 +1,45 @@
-.sidenav{
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .sidenav {
     background-color: #f5e0c0d5;
-    width:230px;
+    width: 230px;
     border: none;
-}
-.sidenav a {
-    color:white;
-}
-.sidenav i{
-    padding-right:10px;
-}
-.content{
-    padding:16px;
-    background-color:white;
-}
+  }
+  
+  .mat-nav-list {
+    padding-top: 64px;
+    height: calc(100vh - 64px);
+    overflow-y: auto;
+  }
+  
+  .mat-nav-list a {
+    color: white; 
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+    margin: 8px 0;
+    text-decoration: none;
+    border-radius: 4px; 
+  }
+  
+  .mat-nav-list a:hover {
+    background-color: #d4a373;
+  }
+  
+  .mat-nav-list .material-icons {
+    padding-right: 10px;
+  }
+  
+  .content {
+    padding: 16px;
+    margin-top: 64px;
+    background-color: white;
+    height: calc(100vh - 64px);
+    overflow-y: auto;
+  }
+  

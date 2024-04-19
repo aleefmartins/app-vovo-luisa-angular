@@ -4,7 +4,6 @@ import { MatDialogRef, MAT_DIALOG_DATA, MatDialogModule, MatDialogActions } from
 import { UserAccountService } from '../../../service/user-account.service';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatButtonModule } from '@angular/material/button';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-delete',
@@ -18,14 +17,13 @@ export class UserDeleteComponent {
     public dialogRef: MatDialogRef<UserDeleteComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
     private userAccountService: UserAccountService,
-    private router: Router,
   ) {}
 
   deleteUser(): void {
     this.userAccountService.deleteUser(this.data.userId).subscribe({
       next: () => {
         this.userAccountService.showMessage('Registro excluido com sucesso.');
-        this.router.navigate(['/users']);
+        window.location.href = '/users';
       },
       error: () => {
         this.userAccountService.showMessage('Erro ao excluir o registro.');

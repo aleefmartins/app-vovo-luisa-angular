@@ -43,7 +43,7 @@ describe('HeaderComponent', () => {
     const message = compiled.querySelector('.title-group a');
     expect(message).toBeTruthy('Message element should be present');
     if (message) {
-    expect(message.textContent).toContain('Seja bem vindo ao app Delicias da Vovó Luisa');
+    expect(message.textContent).toContain('Sistema de gestão Delicias da Vovó Luisa');
   }
   });
 });
